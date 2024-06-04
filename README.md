@@ -1,0 +1,2 @@
+# Blogzine-Template
+ Welcome to our unofficial project based on the paid Bootstrap template called Blogzine! Our project is intended for educational purposes only, and we want to emphasize that no copies will be sold or published. This initiative was developed for the sole purpose of learning and studying the Bootstrap framework. We greatly value the intellectual property of all creators and encourage the ethical use of templates to enhance our skill set. Thank you for your understanding and support!
