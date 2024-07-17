@@ -132,12 +132,24 @@
             </div>
         </div>
     </div>
-    <header>
-        <div class="d-none d-lg-block navbar-top small">
+  
+    <header class="navbar-light navbar-sticky header-static">
+        <div class="navbar-top d-none d-lg-block small">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center my-2">
                     <ul class="nav">
-                        <li class="nav-item d-flex"><a class="nav-link ps-0" href="">About</a><a class="nav-link" href="">Forum</a><a class="nav-link" href="">Buy now!</a><a class="nav-link" href="">Login / Join</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://themes.getbootstrap.com/store/webestica/">Buy now!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">Login / Join</a>
+                        </li>
                     </ul>
                     <div class="d-flex align-items-center">
                         <div class="btn-group me-3" role="group" aria-label="font size changer">
@@ -150,302 +162,327 @@
                             <input type="radio" class="btn-check" name="fntradio" id="font-lg">
                             <label class="btn btn-xs btn-outline-primary mb-0" for="font-lg">A+</label>
                         </div>
-                        <div class="theme-switcher dropdown"><button class="btn btn-link" aria-expanded="false" data-bs-toggle="dropdown" id="themech-btn" type="button" style="color: var(--bs-body-color);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="mb-1" style="font-size: 26px;">
-                                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                    <path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"></path>
-                                </svg></button>
-                            <div class="dropdown-menu" id="themech-menu"><a class="dropdown-item d-flex align-items-center themech-menu-item" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
-                                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-                                    </svg>Light</a><a class="dropdown-item d-flex align-items-center themech-menu-item" href="#" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
-                                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"></path>
-                                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-                                    </svg>Dark</a><a class="dropdown-item d-flex align-items-center themech-menu-item" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
-                                        <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
-                                    </svg>Auto</a></div>
+    
+                        <div class="nav-item dropdown mx-2">
+                            <div class="theme-switcher dropdown"><button class="btn btn-link show" aria-expanded="true" data-bs-toggle="dropdown" id="themech-btn" type="button" style="color: var(--bs-body-color);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="mb-1" style="font-size: 26px;">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"></path>
+                            </svg></button>
+                        <div class="dropdown-menu" id="themech-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(1026px, 42px);" data-popper-placement="bottom-start"><a class="dropdown-item d-flex align-items-center themech-menu-item active" href="#" data-bs-theme-value="light" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
+                                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                                </svg>Light</a><a class="dropdown-item d-flex align-items-center themech-menu-item" href="#" data-bs-theme-value="dark" aria-pressed="false"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"></path>
+                                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                                </svg>Dark</a><a class="dropdown-item d-flex align-items-center themech-menu-item" href="#" data-bs-theme-value="auto" aria-pressed="false"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
+                                    <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
+                                </svg>Auto</a></div>
+                             </div>
+                            <ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+                                <li class="mb-1">
+                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light">
+                                        <svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                                            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                                            <use href="#"></use>
+                                        </svg>Light
+                                    </button>
+                                </li>
+                                <li class="mb-1">
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                                            <use href="#"></use>
+                                        </svg>Dark
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                                            <use href="#"></use>
+                                        </svg>Auto
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
+    
                         <ul class="nav">
-                            <li class="nav-item"><a class="nav-link px-2 fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="social-media-icon">
-                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                        <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link px-2 fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="social-media-icon">
-                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"></path>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link px-2 fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="social-media-icon">
-                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link px-2 fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="social-media-icon">
-                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                        <path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"></path>
-                                    </svg></a></li>
-                            <li class="nav-item"><a class="nav-link px-2 fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="social-media-icon">
-                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-16.2 149.6c-1.4 31.1-23.2 73.8-65.3 127.9-43.5 56.5-80.3 84.8-110.4 84.8-18.7 0-34.4-17.2-47.3-51.6-25.2-92.3-35.9-146.4-56.7-146.4-2.4 0-10.8 5-25.1 15.1L64 192c36.9-32.4 72.1-68.4 94.1-70.4 24.9-2.4 40.2 14.6 46 51.1 20.5 129.6 29.6 149.2 66.8 90.5 13.4-21.2 20.6-37.2 21.5-48.3 3.4-32.8-25.6-30.6-45.2-22.2 15.7-51.5 45.8-76.5 90.1-75.1 32.9 1 48.4 22.4 46.5 64z"></path>
-                                    </svg></a></li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-youtube-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-2 pe-0 fs-5" href="#"><i class="fab fa-vimeo"></i></a>
+                            </li>
                         </ul>
-                        <ul class="nav"></ul>
                     </div>
                 </div>
-                <div class="border-2 border-primary border-bottom opacity-1"></div>
+                <div class="border-bottom border-2 border-primary opacity-1"></div>
             </div>
         </div>
+
         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-item light-mode-item" src="assets/img/logo.svg" alt="logo">			
+                    <img class="navbar-brand-item dark-mode-item" src="assets/img/logo-light.svg" alt="logo">			
+                </a>
+    
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-body h6 d-none d-sm-inline-block">Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll mx-auto">
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                                <li> <a class="dropdown-item active" href="./index.html">Home default</a></li>
+                                <li> <a class="dropdown-item" href="#">Home lazy load</a></li>
+                                <li> <a class="dropdown-item" href="#">Magazine classic</a></li>
+                                <li> <a class="dropdown-item" href="#">Magazine</a></li>
+                                <li> <a class="dropdown-item" href="#">Home cards</a></li>
+                                <li> <a class="dropdown-item" href="#">Blog classic</a></li>
+                                <li> <a class="dropdown-item" href="#">Blog Personal </a></li>
+                                <li> <a class="dropdown-item" href="#">Blog Vintage</a></li>
+                                <li> <a class="dropdown-item" href="#">Blog Tech</a></li>
+                                <li> <a class="dropdown-item" href="#">Blog Fashion</a></li>
+                                <li> <a class="dropdown-item" href="#">Blog Podcast</a></li>
+                                <li> <a class="dropdown-item" href="#">Home Shop </a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- Nav item 2 Pages -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                                <li> <a class="dropdown-item" href="#">About</a></li>
+                                <li> <a class="dropdown-item" href="#">Contact</a></li>
+                                <!-- Dropdown submenu -->
+                                <li class="dropdown-submenu dropend"> 
+                                    <a class="dropdown-item dropdown-toggle" href="#">Shop</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="#">Shop grid</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Shop detail</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Checkout</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Cart</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Empty Cart</a> </li>
+                                    </ul>
+                                </li>
+                                <!-- Dropdown submenu -->
+                                <li class="dropdown-submenu dropend"> 
+                                    <a class="dropdown-item dropdown-toggle" href="#">Other Archives</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="#">Author Page</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Category page 1</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Category page 2</a> </li>
+                                        <li> <a class="dropdown-item" href="#"># tag</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Search result</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="#">Error 404</a></li>
+                                <li> <a class="dropdown-item" href="#">signin</a></li>
+                                <li> <a class="dropdown-item" href="#">signup</a></li>
+                                <li> <a class="dropdown-item" href="#">offline</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li class="dropdown-submenu dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
+                                            <ul class="dropdown-menu" data-bs-popper="none">
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                        <li class="dropdown-submenu dropstart">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
+                                            <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li> 
+                                    <a class="dropdown-item" href="#">
+                                        <i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
+                                    </a> 
+                                </li>
+                                <li> 
+                                    <a class="dropdown-item" href="#">
+                                        <i class="text-danger fa-fw bi bi-card-text me-2"></i>Documentation
+                                    </a> 
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li> 
+                                    <a class="dropdown-item" href="#">
+                                        <i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
+                                    </a> 
+                                </li>
+                                <li> 
+                                    <a class="dropdown-item" href="#">
+                                        <i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy blogzine!
+                                    </a> 
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>
+                            <ul class="dropdown-menu" aria-labelledby="postMenu">  
+                                <li class="dropdown-submenu dropend"> 
+                                    <a class="dropdown-item dropdown-toggle" href="#">Post grid</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="#">Post grid</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Post grid 4 col</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Post grid masonry</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Post grid masonry filter</a> </li>
+                                        <li> <a class="dropdown-item" href="#">Post mixed large than grid</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="#">Post list</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post list 2</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post card</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post Overlay</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post types</a> </li>
+                                <li class="dropdown-divider"></li>
+                                <li> <a class="dropdown-item" href="#">Post single magazine</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post single classic</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post single minimal</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post single card</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post single review</a> </li>
+                                <li> <a class="dropdown-item" href="#">Post single video</a> </li>
+                                <li> <a class="dropdown-item" href="#">Podcast single</a> </li>
+                                <li class="dropdown-divider"></li>
+                                <li> <a class="dropdown-item" href="#">Pagination styles</a> </li>
+                            </ul>
+                        </li>
+    
+                        <!-- Nav item 4 Mega menu -->
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenu">
+                                <div class="container">
+                                    <div class="row g-4 p-3 flex-fill">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <img class="card-img rounded" src="assets/img/01.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Joan Wallace</a>
+                                                        </li>
+                                                        <li class="nav-item">Jul 13, 2024</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <img class="card-img rounded" src="assets/img/02.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Lori Stevens</a>
+                                                        </li>
+                                                        <li class="nav-item">Jun 07, 2024</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <img class="card-img rounded" src="assets/img/03.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Judy Nguyen</a>
+                                                        </li>
+                                                        <li class="nav-item">Sep 13, 2024</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="bg-primary bg-opacity-10 p-4 text-center h-100 w-100 rounded">
+                                                <span>The Blogzine</span>
+                                                <h3>Premium Membership</h3>
+                                                <p>Become a Member Today!</p>
+                                                <a href="#" class="btn btn-warning">View pricing plans</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row px-3">
+                                        <div class="col-12">
+                                            <ul class="list-inline mt-3">
+                                                <li class="list-inline-item">Trending tags:</li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
+                        <li class="nav-item"> <a class="nav-link" href="#">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav flex-nowrap align-items-center">
+
+                    <div class="nav-item d-none d-md-block">
+                        <a href="#" class="btn btn-sm btn-danger mb-0 mx-2">Subscribe!</a>
+                    </div>
+
+                    <div class="nav-item dropdown dropdown-toggle-icon-none nav-search">
+                        <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-search fs-4"> </i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
+                            <form class="input-group">
+                                <input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-success m-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Offcanvas menu toggler -->
+                    <div class="nav-item">
+                        <a class="nav-link p-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                            <i class="fa fa-bars rtl-flip fs-2" data-bs-target="#offcanvasMenu"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Nav right END -->
+            </div>
         </nav>
+        <!-- Logo Nav END -->
     </header>
-    <div id="sticky-nav" style="height:0px;"></div>
-    <nav class="navbar navbar-expand-lg">
-		<div class="container">
-
-			<a class="navbar-brand" href="index.html">
-				<img class="navbar-brand-item light-mode-item" src="assets/img/logo.svg" alt="logo">	
-                <img class="navbar-brand-item dark-mode-item" src="assets/img/logo-light.svg" alt="logo">					
-			</a>
-
-			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="text-body h6 d-none d-sm-inline-block">Menu</span>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll mx-auto">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-						<ul class="dropdown-menu" aria-labelledby="homeMenu">
-							<li> <a class="dropdown-item active" href="index.html">Home default</a></li>
-							<li> <a class="dropdown-item" href="#">Home lazy load</a></li>
-							<li> <a class="dropdown-item" href="#">Magazine classic</a></li>
-							<li> <a class="dropdown-item" href="#">Magazine</a></li>
-							<li> <a class="dropdown-item" href="#">Home cards</a></li>
-							<li> <a class="dropdown-item" href="#">Blog classic</a></li>
-							<li> <a class="dropdown-item" href="#">Blog Personal </a></li>
-							<li> <a class="dropdown-item" href="#">Blog Vintage</a></li>
-							<li> <a class="dropdown-item" href="#">Blog Tech</a></li>
-							<li> <a class="dropdown-item" href="#">Blog Fashion</a></li>
-							<li> <a class="dropdown-item" href="#">Blog Podcast</a></li>
-							<li> <a class="dropdown-item" href="#">Home Shop </a></li>
-						</ul>
-					</li>
-
-					<!-- Nav item 2 Pages -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
-							<li> <a class="dropdown-item" href="#">About</a></li>
-							<li> <a class="dropdown-item" href="#">Contact</a></li>
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend"> 
-								<a class="dropdown-item dropdown-toggle" href="#">Shop</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="#">Shop grid</a> </li>
-									<li> <a class="dropdown-item" href="#">Shop detail</a> </li>
-									<li> <a class="dropdown-item" href="#">Checkout</a> </li>
-									<li> <a class="dropdown-item" href="#">Cart</a> </li>
-									<li> <a class="dropdown-item" href="#">Empty Cart</a> </li>
-								</ul>
-							</li>
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend"> 
-								<a class="dropdown-item dropdown-toggle" href="#">Other Archives</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="#">Author Page</a> </li>
-									<li> <a class="dropdown-item" href="#">Category page 1</a> </li>
-									<li> <a class="dropdown-item" href="#">Category page 2</a> </li>
-									<li> <a class="dropdown-item" href="#"># tag</a> </li>
-									<li> <a class="dropdown-item" href="#">Search result</a> </li>
-								</ul>
-							</li>
-							<li> <a class="dropdown-item" href="#">Error 404</a></li>
-							<li> <a class="dropdown-item" href="#">signin</a></li>
-							<li> <a class="dropdown-item" href="#">signup</a></li>
-							<li> <a class="dropdown-item" href="#">offline</a></li>
-							<li class="dropdown-divider"></li>
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li class="dropdown-submenu dropend">
-										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
-										<ul class="dropdown-menu" data-bs-popper="none">
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-										</ul>
-									</li>
-									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-									<li class="dropdown-submenu dropstart">
-										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
-										<ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-										</ul>
-									</li>
-									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-								</ul>
-							</li>
-							<li class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="#" >
-									<i class="text-warning fa-fw fa fa-support me-2"></i>Support
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="#" >
-									<i class="text-danger fa-fw fa fa-sloid fa-file me-2"></i>Documentation
-								</a> 
-							</li>
-							<li class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="#">
-									<i class="text-info fa-fw fa fa-toggle-on me-2"></i>RTL demo
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="#">
-									<i class="text-success fa-fw fa fa-cloud-download me-2"></i>Buy blogzine!
-								</a> 
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>
-						<ul class="dropdown-menu" aria-labelledby="postMenu">
-							<li class="dropdown-submenu dropend"> 
-								<a class="dropdown-item dropdown-toggle" href="#">Post grid</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="#">Post grid</a> </li>
-									<li> <a class="dropdown-item" href="#">Post grid 4 col</a> </li>
-									<li> <a class="dropdown-item" href="#">Post grid masonry</a> </li>
-									<li> <a class="dropdown-item" href="#">Post grid masonry filter</a> </li>
-									<li> <a class="dropdown-item" href="#">Post mixed large than grid</a> </li>
-								</ul>
-							</li>
-							<li> <a class="dropdown-item" href="#">Post list</a> </li>
-							<li> <a class="dropdown-item" href="#">Post list 2</a> </li>
-							<li> <a class="dropdown-item" href="#">Post card</a> </li>
-							<li> <a class="dropdown-item" href="#">Post Overlay</a> </li>
-							<li> <a class="dropdown-item" href="#">Post types</a> </li>
-							<li class="dropdown-divider"></li>
-							<li> <a class="dropdown-item" href="#">Post single magazine</a> </li>
-							<li> <a class="dropdown-item" href="#">Post single classic</a> </li>
-							<li> <a class="dropdown-item" href="#">Post single minimal</a> </li>
-							<li> <a class="dropdown-item" href="#">Post single card</a> </li>
-							<li> <a class="dropdown-item" href="#">Post single review</a> </li>
-							<li> <a class="dropdown-item" href="#">Post single video</a> </li>
-							<li> <a class="dropdown-item" href="#">Podcast single</a> </li>
-							<li class="dropdown-divider"></li>
-							<li> <a class="dropdown-item" href="#">Pagination styles</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown dropdown-fullwidth">
-						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>
-						<div class="dropdown-menu" aria-labelledby="megaMenu">
-							<div class="container">
-								<div class="row g-4 p-3 flex-fill">
-									<div class="col-sm-6 col-lg-3">
-										<div class="card bg-transparent">
-											<img class="card-img rounded" src="assets/img/01.jpg" alt="Thumbnail">
-											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
-												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
-													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Joan Wallace</a>
-													</li>
-													<li class="nav-item">Feb 18, 2022</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-lg-3">
-										<div class="card bg-transparent">
-											<img class="card-img rounded" src="assets/img/02.jpg" alt="Thumbnail">
-											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
-												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
-													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Lori Stevens</a>
-													</li>
-													<li class="nav-item">Jun 03, 2022</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-lg-3">
-										<div class="card bg-transparent">
-
-											<img class="card-img rounded" src="assets/img/03.jpg" alt="Thumbnail">
-											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
-
-												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
-													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Judy Nguyen</a>
-													</li>
-													<li class="nav-item">Sep 07, 2022</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-lg-3">
-										<div class="bg-primary bg-opacity-10 p-4 text-center h-100 w-100 rounded">
-											<span>The Blogzine</span>
-											<h3>Premium Membership</h3>
-											<p>Become a Member Today!</p>
-											<a href="#" class="btn btn-warning">View pricing plans</a>
-										</div>
-									</div>
-								</div> 
-
-								<div class="row px-3">
-									<div class="col-12">
-										<ul class="list-inline mt-3">
-											<li class="list-inline-item">Trending tags:</li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="nav-item"> <a class="nav-link" href="#">Dashboard</a></li>
-				</ul>
-			</div>
-
-			<div class="nav flex-nowrap align-items-center">
-				<div class="nav-item d-none d-md-block">
-					<a href="#" class="btn btn-sm btn-danger mb-0 mx-2">Subscribe!</a>
-				</div>
-	
-				<div class="nav-item dropdown dropdown-toggle-icon-none nav-search">
-					<a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="fa fa-search fs-4"> </i>
-                        
-					</a>
-					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
-						<form class="input-group">
-							<input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-success m-0" type="submit">Search</button>
-						</form>
-					</div>
-				</div>
-		
-				<div class="nav-item">
-					<a class="nav-link p-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
-						<i class="fa fa-solid fa-bars rtl-flip fs-2" data-bs-target="#offcanvasMenu"> </i>
-					</a>
-				</div>
-			</div>
-
-		</div>
-	</nav>
+    
     <main>
         <div class="container">
             <div class="row h-100">
@@ -1034,6 +1071,7 @@
                 </div>
                 <!-- end -->
                  
+                 
                    <!-- section 4 for desktop -->
                     <div class="col-12" style="height: 50vh;">
                         <div class="row h-100">
@@ -1208,12 +1246,14 @@
                 </div>
             </div>
         </div>
+        
     </footer>
-    <div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+    <div class="back-top"><i class="fa-solid fa-arrow-up"></i></div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/30fc0982d8.js"></script>
+    <script src="./assets/js/test.js"></script>
 </body>
 
 </html>
